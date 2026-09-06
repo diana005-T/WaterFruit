@@ -1,8 +1,11 @@
 /* =========================================================
    WATERFRUIT — script.js
-   Menú hamburguesa, scroll suave, encuesta, localStorage,
-   contador de participantes, animaciones y configuración
-   de redes sociales.
+   El menú móvil ahora lo maneja el componente Collapse de
+   Bootstrap (ver data-bs-toggle en el HTML). Este archivo se
+   encarga de: cerrar el menú al elegir una opción, la
+   encuesta funcional, el contador de participantes, las
+   animaciones al hacer scroll y la configuración de redes
+   sociales.
 ========================================================= */
 
 (function () {
@@ -14,7 +17,7 @@
   --------------------------------------------------------- */
   const REDES = {
     instagram: "https://www.instagram.com/waterfruit_piura?stkn=MWJpNTR1OW5rb2NjMg%3D%3D&utm_source=qr",
-    facebook: "COLOCAR_LINK_FACEBOOK"
+    facebook: "https://www.facebook.com/share/1DbD7hs9iC/?mibextid=wwXIfr"
   };
 
   function configurarRedesSociales() {
@@ -28,52 +31,26 @@
   }
 
   /* ---------------------------------------------------------
-     2. MENÚ HAMBURGUESA (móvil)
+     2. CERRAR EL MENÚ DE BOOTSTRAP AL ELEGIR UNA OPCIÓN
+     El menú hamburguesa (navbar-collapse) es de Bootstrap;
+     solo nos aseguramos de que se cierre en móvil al tocar
+     un enlace, usando la propia API de Bootstrap.
   --------------------------------------------------------- */
-  function iniciarMenuHamburguesa() {
-    const boton = document.getElementById("navToggle");
+  function iniciarCierreDeMenu() {
     const menu = document.getElementById("navMenu");
-    if (!boton || !menu) return;
+    if (!menu || !window.bootstrap) return;
 
-    boton.addEventListener("click", () => {
-      const abierto = menu.classList.toggle("is-open");
-      boton.classList.toggle("is-open", abierto);
-      boton.setAttribute("aria-expanded", String(abierto));
-      boton.setAttribute(
-        "aria-label",
-        abierto ? "Cerrar menú de navegación" : "Abrir menú de navegación"
-      );
-    });
-
-    // Cerrar el menú al elegir una opción (mejora la experiencia en móvil)
-    menu.querySelectorAll(".nav-link").forEach((enlace) => {
+    const enlaces = menu.querySelectorAll(".nav-link");
+    enlaces.forEach((enlace) => {
       enlace.addEventListener("click", () => {
-        menu.classList.remove("is-open");
-        boton.classList.remove("is-open");
-        boton.setAttribute("aria-expanded", "false");
+        const instancia = window.bootstrap.Collapse.getOrCreateInstance(menu, { toggle: false });
+        instancia.hide();
       });
     });
   }
 
   /* ---------------------------------------------------------
-     3. SCROLL SUAVE (respaldo para navegadores sin soporte CSS)
-  --------------------------------------------------------- */
-  function iniciarScrollSuave() {
-    document.querySelectorAll('a[href^="#"]').forEach((enlace) => {
-      enlace.addEventListener("click", (evento) => {
-        const destinoId = enlace.getAttribute("href");
-        if (!destinoId || destinoId === "#") return;
-        const destino = document.querySelector(destinoId);
-        if (destino) {
-          evento.preventDefault();
-          destino.scrollIntoView({ behavior: "smooth", block: "start" });
-        }
-      });
-    });
-  }
-
-  /* ---------------------------------------------------------
-     4. ANIMACIONES AL HACER SCROLL (IntersectionObserver)
+     3. ANIMACIONES AL HACER SCROLL (IntersectionObserver)
   --------------------------------------------------------- */
   function iniciarAnimacionesReveal() {
     const elementos = document.querySelectorAll(".reveal");
@@ -98,7 +75,7 @@
   }
 
   /* ---------------------------------------------------------
-     5. ENCUESTA FUNCIONAL
+     4. ENCUESTA FUNCIONAL
      NOTA IMPORTANTE:
      localStorage solamente guarda las respuestas en el
      navegador de la persona que llena el formulario. Cada
@@ -144,7 +121,7 @@
   }
 
   function limpiarErrores(formulario) {
-    formulario.querySelectorAll(".survey__error").forEach((el) => {
+    formulario.querySelectorAll(".survey-error").forEach((el) => {
       el.textContent = "";
     });
   }
@@ -227,8 +204,7 @@
   --------------------------------------------------------- */
   document.addEventListener("DOMContentLoaded", () => {
     configurarRedesSociales();
-    iniciarMenuHamburguesa();
-    iniciarScrollSuave();
+    iniciarCierreDeMenu();
     iniciarAnimacionesReveal();
     iniciarEncuesta();
   });
