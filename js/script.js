@@ -194,7 +194,7 @@
       limpiarErrores(formulario);
 
       if (mensajeExito) {
-        mensajeExito.textContent = "¡Gracias por ayudarnos a mejorar Waterfruit! 💧🍓";
+        mensajeExito.textContent = "¡Gracias por ayudarnos a mejorar Waterfruit!";
       }
     });
   }

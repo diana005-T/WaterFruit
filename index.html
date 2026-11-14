@@ -31,34 +31,63 @@
 
   <a class="skip-link" href="#inicio">Saltar al contenido principal</a>
 
-  <!-- ============ NAVBAR ============ -->
-  <nav class="navbar navbar-expand-lg navbar-wf sticky-top" id="navbar" aria-label="Navegación principal">
-    <div class="container">
-      <a class="navbar-brand navbar-brand-wf" href="#inicio" aria-label="Waterfruit, ir al inicio">
-        <span aria-hidden="true">💧</span> WATERFRUIT
-      </a>
+  <svg class="icon-sprite" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false">
+    <symbol id="icon-drop" viewBox="0 0 24 24"><path d="M12 3.5S5.5 11 5.5 15.2a6.5 6.5 0 0 0 13 0C18.5 11 12 3.5 12 3.5Z"/><path d="M9 16a3 3 0 0 0 3 3"/></symbol>
+    <symbol id="icon-berry" viewBox="0 0 24 24"><path d="M12 7.5c-2.5-2.2-7-.7-6.5 3.3.4 3.4 3.2 7.4 6.5 9.7 3.3-2.3 6.1-6.3 6.5-9.7.5-4-4-5.5-6.5-3.3Z"/><path d="M12 7.5c-.6-2.2-2.4-3.5-4.5-3.5m4.5 3.5c.6-2.2 2.4-3.5 4.5-3.5m-4.5 3.5V3"/></symbol>
+    <symbol id="icon-leaf" viewBox="0 0 24 24"><path d="M19.5 4.5C11 4.5 5 7.5 5 13a5 5 0 0 0 5 5c5.5 0 8.5-6 9.5-13.5Z"/><path d="M4 20c3.5-5 7-7.5 12-10"/></symbol>
+    <symbol id="icon-snowflake" viewBox="0 0 24 24"><path d="M12 3v18M4.2 7.5l15.6 9M4.2 16.5l15.6-9M12 3l-2 2m2-2 2 2m-2 16-2-2m2 2 2-2M4.2 7.5l2.8.2-.8 2.7m13.6 6.1-2.8-.2.8-2.7M4.2 16.5l.8-2.7 2.8.2m11.4-6.5-.8 2.7-2.8-.2"/></symbol>
+    <symbol id="icon-backpack" viewBox="0 0 24 24"><path d="M7 7V5.5A2.5 2.5 0 0 1 9.5 3h5A2.5 2.5 0 0 1 17 5.5V7"/><path d="M5 8.5A2.5 2.5 0 0 1 7.5 6h9A2.5 2.5 0 0 1 19 8.5v10a2.5 2.5 0 0 1-2.5 2.5h-9A2.5 2.5 0 0 1 5 18.5v-10Z"/><path d="M8 11h8v4H8zm-3 1H3v5h2m14-5h2v5h-2"/></symbol>
+    <symbol id="icon-wallet" viewBox="0 0 24 24"><path d="M4 6.5A2.5 2.5 0 0 1 6.5 4H19a2 2 0 0 1 2 2v13H5a2 2 0 0 1-2-2V7.5A1 1 0 0 1 4 6.5Z"/><path d="M3.5 8H18a2 2 0 0 1 2 2v2h-4a2 2 0 0 0 0 4h4m-4-4h.01"/></symbol>
+    <symbol id="icon-sparkle" viewBox="0 0 24 24"><path d="m12 3 1.7 6.3L20 11l-6.3 1.7L12 19l-1.7-6.3L4 11l6.3-1.7L12 3Z"/><path d="m19 15 .8 2.2L22 18l-2.2.8L19 21l-.8-2.2L16 18l2.2-.8L19 15Z"/></symbol>
+    <symbol id="icon-citrus" viewBox="0 0 24 24"><circle cx="12" cy="13" r="7.5"/><path d="M12 5.5V3m0 10 5.3-5.3M12 13l-5.3-5.3M12 13v7.5m0-7.5-5.3 5.3M12 13l5.3 5.3M12 5.5c1.7-2.2 3.7-2.8 6-2.5"/></symbol>
+    <symbol id="icon-cap" viewBox="0 0 24 24"><path d="m2.5 9 9.5-5 9.5 5-9.5 5-9.5-5Z"/><path d="M6 11v5c3.8 3 8.2 3 12 0v-5m3.5-2v6"/></symbol>
+    <symbol id="icon-sun" viewBox="0 0 24 24"><circle cx="12" cy="12" r="4"/><path d="M12 2v2m0 16v2M4.93 4.93l1.42 1.42m11.3 11.3 1.42 1.42M2 12h2m16 0h2M4.93 19.07l1.42-1.42m11.3-11.3 1.42-1.42"/></symbol>
+    <symbol id="icon-brain" viewBox="0 0 24 24"><path d="M12 5.5a3 3 0 0 0-5.7-1.3 3 3 0 0 0-2 5.2 3.5 3.5 0 0 0 .4 5.8A3 3 0 0 0 8 20a3 3 0 0 0 4-2.8V5.5Zm0 0a3 3 0 0 1 5.7-1.3 3 3 0 0 1 2 5.2 3.5 3.5 0 0 1-.4 5.8A3 3 0 0 1 16 20a3 3 0 0 1-4-2.8"/><path d="M8 8c1.5 0 2.5 1 2.5 2.5M7 14c1.5 0 2.5-1 2.5-2.5m6.5-3.5c-1.5 0-2.5 1-2.5 2.5m3.5 3.5c-1.5 0-2.5-1-2.5-2.5"/></symbol>
+    <symbol id="icon-bolt" viewBox="0 0 24 24"><path d="m13.5 2.5-9 11h7l-1 8 9-11h-7l1-8Z"/></symbol>
+    <symbol id="icon-thermometer" viewBox="0 0 24 24"><path d="M14 14.8V5a3 3 0 0 0-6 0v9.8a5 5 0 1 0 6 0Z"/><path d="M11 12v6"/></symbol>
+    <symbol id="icon-basket" viewBox="0 0 24 24"><path d="m3 10 2 10h14l2-10H3Zm-1 0h20M8 10l4-7 4 7m-6 3v4m4-4v4"/></symbol>
+    <symbol id="icon-shower" viewBox="0 0 24 24"><path d="M4 10a8 8 0 0 1 16 0M3 10h18"/><path d="m6 14 .5 1m3-1v2m3-2v1m3-1v2m3-2 .5 1M9 20v1m6-1v1"/></symbol>
+    <symbol id="icon-flask" viewBox="0 0 24 24"><path d="M9 3h6m-5 0v6l-5.5 9A2 2 0 0 0 6.2 21h11.6a2 2 0 0 0 1.7-3L14 9V3"/><path d="M7.5 16h9"/></symbol>
+    <symbol id="icon-bottle" viewBox="0 0 24 24"><path d="M9 3h6v3l1.5 2v12a2 2 0 0 1-2 2h-5a2 2 0 0 1-2-2V8L9 6V3Z"/><path d="M9 6h6m-7.5 7h9"/></symbol>
+    <symbol id="icon-check" viewBox="0 0 24 24"><path d="m5 12 4.5 4.5L19 7"/></symbol>
+    <symbol id="icon-arrow-right" viewBox="0 0 24 24"><path d="M4 12h15m-6-6 6 6-6 6"/></symbol>
+    <symbol id="icon-check-circle" viewBox="0 0 24 24"><circle cx="12" cy="12" r="9"/><path d="m8 12 2.5 2.5L16.5 9"/></symbol>
+    <symbol id="icon-star" viewBox="0 0 24 24"><path d="m12 3 2.8 5.7 6.2.9-4.5 4.4 1.1 6.2-5.6-3-5.6 3 1.1-6.2L3 9.6l6.2-.9L12 3Z"/></symbol>
+    <symbol id="icon-instagram" viewBox="0 0 24 24"><rect x="3.5" y="3.5" width="17" height="17" rx="5"/><circle cx="12" cy="12" r="4"/><path d="M17.5 6.8h.01"/></symbol>
+    <symbol id="icon-facebook" viewBox="0 0 24 24"><path d="M14 21v-8h3l.5-4H14V7c0-1.2.4-2 2-2h1.7V1.5C17 1.3 15.8 1.2 14.5 1.2 11.5 1.2 9.5 3 9.5 6.2V9H6v4h3.5v8H14Z"/></symbol>
+  </svg>
 
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu"
-        aria-controls="navMenu" aria-expanded="false" aria-label="Abrir menú de navegación">
-        <span class="navbar-toggler-icon"></span>
-      </button>
+  <header>
+    <!-- ============ NAVBAR ============ -->
+    <nav class="navbar navbar-expand-xl navbar-wf sticky-top" id="navbar" aria-label="Navegación principal">
+      <div class="container">
+        <a class="navbar-brand navbar-brand-wf" href="#inicio" aria-label="Waterfruit, ir al inicio">
+          <img src="img/logo.png" class="navbar-logo" alt="WATERFRUIT" width="160" height="64">
+        </a>
 
-      <div class="collapse navbar-collapse" id="navMenu">
-        <ul class="navbar-nav ms-auto gap-lg-2">
-          <li class="nav-item"><a href="#inicio" class="nav-link">Inicio</a></li>
-          <li class="nav-item"><a href="#nosotros" class="nav-link">Nosotros</a></li>
-          <li class="nav-item"><a href="#caracteristicas" class="nav-link">Características</a></li>
-          <li class="nav-item"><a href="#sabores" class="nav-link">Sabores</a></li>
-          <li class="nav-item"><a href="#ayuda" class="nav-link">¿En qué ayuda?</a></li>
-          <li class="nav-item"><a href="#beneficios" class="nav-link">Beneficios</a></li>
-          <li class="nav-item"><a href="#proceso" class="nav-link">Proceso</a></li>
-          <li class="nav-item"><a href="#costos" class="nav-link">Costos</a></li>
-          <li class="nav-item"><a href="#encuesta" class="nav-link">Encuesta</a></li>
-          <li class="nav-item"><a href="#redes" class="nav-link">Redes</a></li>
-        </ul>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu"
+          aria-controls="navMenu" aria-expanded="false" aria-label="Abrir menú de navegación">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navMenu">
+          <ul class="navbar-nav ms-auto gap-xl-2">
+            <li class="nav-item"><a href="#inicio" class="nav-link">Inicio</a></li>
+            <li class="nav-item"><a href="#nosotros" class="nav-link">Nosotros</a></li>
+            <li class="nav-item"><a href="#caracteristicas" class="nav-link">Características</a></li>
+            <li class="nav-item"><a href="#sabores" class="nav-link">Sabores</a></li>
+            <li class="nav-item"><a href="#galeria" class="nav-link">Galería</a></li>
+            <li class="nav-item"><a href="#ayuda" class="nav-link">¿En qué ayuda?</a></li>
+            <li class="nav-item"><a href="#beneficios" class="nav-link">Beneficios</a></li>
+            <li class="nav-item"><a href="#proceso" class="nav-link">Proceso</a></li>
+            <li class="nav-item"><a href="#costos" class="nav-link">Costos</a></li>
+            <li class="nav-item"><a href="#encuesta" class="nav-link">Encuesta</a></li>
+            <li class="nav-item"><a href="#redes" class="nav-link">Redes</a></li>
+          </ul>
+        </div>
       </div>
-    </div>
-  </nav>
+    </nav>
+  </header>
 
   <main id="inicio">
 
@@ -78,10 +107,10 @@
             </div>
 
             <ul class="hero-tags list-unstyled d-flex flex-wrap gap-2 justify-content-center justify-content-lg-start">
-              <li class="hero-tag">✓ Natural</li>
-              <li class="hero-tag">✓ Refrescante</li>
-              <li class="hero-tag">✓ Frutal</li>
-              <li class="hero-tag">✓ Práctico</li>
+              <li class="hero-tag"><svg class="wf-icon" aria-hidden="true"><use href="#icon-check"></use></svg>Natural</li>
+              <li class="hero-tag"><svg class="wf-icon" aria-hidden="true"><use href="#icon-check"></use></svg>Refrescante</li>
+              <li class="hero-tag"><svg class="wf-icon" aria-hidden="true"><use href="#icon-check"></use></svg>Frutal</li>
+              <li class="hero-tag"><svg class="wf-icon" aria-hidden="true"><use href="#icon-check"></use></svg>Práctico</li>
             </ul>
           </div>
 
@@ -131,49 +160,49 @@
         <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-4">
           <div class="col reveal">
             <div class="card card-wf h-100 p-4 border-0">
-              <span class="icon-badge icon-badge-verde">💧</span>
+              <span class="icon-badge icon-badge-verde"><svg class="wf-icon" aria-hidden="true"><use href="#icon-drop"></use></svg></span>
               <h3 class="card-title-wf">Hidratación</h3>
               <p class="card-text-wf mb-0">Una alternativa refrescante para acompañar las actividades diarias.</p>
             </div>
           </div>
           <div class="col reveal">
             <div class="card card-wf h-100 p-4 border-0">
-              <span class="icon-badge icon-badge-rosado">🍓</span>
+              <span class="icon-badge icon-badge-rosado"><svg class="wf-icon" aria-hidden="true"><use href="#icon-berry"></use></svg></span>
               <h3 class="card-title-wf">Sabores frutales</h3>
               <p class="card-text-wf mb-0">Diferentes opciones para adaptarse a los gustos de nuestros consumidores.</p>
             </div>
           </div>
           <div class="col reveal">
             <div class="card card-wf h-100 p-4 border-0">
-              <span class="icon-badge icon-badge-celeste">🌿</span>
+              <span class="icon-badge icon-badge-celeste"><svg class="wf-icon" aria-hidden="true"><use href="#icon-leaf"></use></svg></span>
               <h3 class="card-title-wf">Ingredientes naturales</h3>
               <p class="card-text-wf mb-0">Una propuesta basada en agua, frutas y elementos naturales.</p>
             </div>
           </div>
           <div class="col reveal">
             <div class="card card-wf h-100 p-4 border-0">
-              <span class="icon-badge icon-badge-amarillo">❄️</span>
+              <span class="icon-badge icon-badge-amarillo"><svg class="wf-icon" aria-hidden="true"><use href="#icon-snowflake"></use></svg></span>
               <h3 class="card-title-wf">Refrescante</h3>
               <p class="card-text-wf mb-0">Ideal para disfrutar fría.</p>
             </div>
           </div>
           <div class="col reveal">
             <div class="card card-wf h-100 p-4 border-0">
-              <span class="icon-badge icon-badge-naranja">🎒</span>
+              <span class="icon-badge icon-badge-naranja"><svg class="wf-icon" aria-hidden="true"><use href="#icon-backpack"></use></svg></span>
               <h3 class="card-title-wf">Práctica</h3>
               <p class="card-text-wf mb-0">Presentación cómoda para llevar.</p>
             </div>
           </div>
           <div class="col reveal">
             <div class="card card-wf h-100 p-4 border-0">
-              <span class="icon-badge icon-badge-verde">💰</span>
+              <span class="icon-badge icon-badge-verde"><svg class="wf-icon" aria-hidden="true"><use href="#icon-wallet"></use></svg></span>
               <h3 class="card-title-wf">Precio accesible</h3>
               <p class="card-text-wf mb-0">Pensada para el público estudiantil.</p>
             </div>
           </div>
           <div class="col reveal">
             <div class="card card-wf h-100 p-4 border-0">
-              <span class="icon-badge icon-badge-rosado">✨</span>
+              <span class="icon-badge icon-badge-rosado"><svg class="wf-icon" aria-hidden="true"><use href="#icon-sparkle"></use></svg></span>
               <h3 class="card-title-wf">Presentación atractiva</h3>
               <p class="card-text-wf mb-0">Una imagen juvenil y llamativa.</p>
             </div>
@@ -193,7 +222,7 @@
           <div class="col">
             <div class="card card-flavor flavor-verde h-100 p-4 border-0">
               <div class="d-flex align-items-center gap-3 mb-2">
-                <span class="icon-badge icon-badge-verde fs-4">🌾</span>
+                <span class="icon-badge icon-badge-verde"><svg class="wf-icon" aria-hidden="true"><use href="#icon-leaf"></use></svg></span>
                 <h3 class="card-title-wf mb-0">Algarrobo Dorado</h3>
               </div>
               <p class="card-text-wf">Una propuesta inspirada en nuestra región, que combina el sabor característico del
@@ -210,7 +239,7 @@
           <div class="col">
             <div class="card card-flavor flavor-amarillo h-100 p-4 border-0">
               <div class="d-flex align-items-center gap-3 mb-2">
-                <span class="icon-badge icon-badge-amarillo fs-4">🍋</span>
+                <span class="icon-badge icon-badge-amarillo"><svg class="wf-icon" aria-hidden="true"><use href="#icon-citrus"></use></svg></span>
                 <h3 class="card-title-wf mb-0">Limón Norteño</h3>
               </div>
               <p class="card-text-wf">Una bebida fresca y cítrica, ideal para quienes prefieren sabores ligeros y
@@ -227,7 +256,7 @@
           <div class="col">
             <div class="card card-flavor flavor-naranja h-100 p-4 border-0">
               <div class="d-flex align-items-center gap-3 mb-2">
-                <span class="icon-badge icon-badge-naranja fs-4">💛</span>
+                <span class="icon-badge icon-badge-naranja"><svg class="wf-icon" aria-hidden="true"><use href="#icon-berry"></use></svg></span>
                 <h3 class="card-title-wf mb-0">Maracuyá del Valle</h3>
               </div>
               <p class="card-text-wf">Una alternativa de sabor intenso y refrescante, inspirada en el sabor tropical del
@@ -372,6 +401,63 @@
   </div>
 </section>
 
+    <!-- ============ GALERÍA ============ -->
+    <section class="section-wf section-tint" id="galeria">
+      <div class="container">
+        <div class="section-head">
+          <h2>Nuestra galería</h2>
+          <p>Un vistazo a Waterfruit y a los sabores que estamos preparando para ti.</p>
+        </div>
+
+        <div class="row row-cols-1 row-cols-sm-2 row-cols-lg-4 g-4">
+          <div class="col reveal">
+            <figure class="gallery-card h-100">
+              <div class="gallery-image gallery-image-cover">
+                <img src="img/waterfruit.png" alt="Presentación general de las bebidas WATERFRUIT">
+              </div>
+              <figcaption class="gallery-caption">
+                <h3>La experiencia Waterfruit</h3>
+                <p class="mb-0">Una propuesta fresca, frutal y llena de color.</p>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="col reveal">
+            <figure class="gallery-card h-100">
+              <div class="gallery-image">
+                <img src="img/algarrobo.png" alt="Botella de Waterfruit sabor Algarrobo Dorado">
+              </div>
+              <figcaption class="gallery-caption">
+                <h3>Algarrobo Dorado</h3>
+                <p class="mb-0">Inspiración regional con notas frescas.</p>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="col reveal">
+            <figure class="gallery-card h-100">
+              <div class="gallery-image">
+                <img src="img/limon.png" alt="Botella de Waterfruit sabor Limón Norteño">
+              </div>
+              <figcaption class="gallery-caption">
+                <h3>Limón Norteño</h3>
+                <p class="mb-0">Un sabor cítrico, ligero y refrescante.</p>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="col reveal">
+            <figure class="gallery-card h-100">
+              <div class="gallery-image">
+                <img src="img/maracuya.png" alt="Botella de Waterfruit sabor Maracuyá del Valle">
+              </div>
+              <figcaption class="gallery-caption">
+                <h3>Maracuyá del Valle</h3>
+                <p class="mb-0">Una alternativa tropical de sabor intenso.</p>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+    </section>
+
     <!-- ============ EN QUÉ AYUDA ============ -->
     <section class="section-wf" id="ayuda">
       <div class="container">
@@ -382,7 +468,7 @@
         <div class="row row-cols-2 row-cols-lg-4 g-4">
           <div class="col reveal">
             <div class="card card-help h-100 p-4 border-0 text-center">
-              <span class="icon-badge icon-badge-verde mx-auto">💧</span>
+              <span class="icon-badge icon-badge-verde mx-auto"><svg class="wf-icon" aria-hidden="true"><use href="#icon-drop"></use></svg></span>
               <h3 class="card-title-wf fs-6">Hidratación diaria</h3>
               <p class="card-text-wf small mb-0">Una alternativa refrescante para acompañar las actividades cotidianas.
               </p>
@@ -390,21 +476,21 @@
           </div>
           <div class="col reveal">
             <div class="card card-help h-100 p-4 border-0 text-center">
-              <span class="icon-badge icon-badge-celeste mx-auto">🎓</span>
+              <span class="icon-badge icon-badge-celeste mx-auto"><svg class="wf-icon" aria-hidden="true"><use href="#icon-cap"></use></svg></span>
               <h3 class="card-title-wf fs-6">Vida estudiantil</h3>
               <p class="card-text-wf small mb-0">Una bebida práctica para clases, trabajos y actividades.</p>
             </div>
           </div>
           <div class="col reveal">
             <div class="card card-help h-100 p-4 border-0 text-center">
-              <span class="icon-badge icon-badge-amarillo mx-auto">☀️</span>
+              <span class="icon-badge icon-badge-amarillo mx-auto"><svg class="wf-icon" aria-hidden="true"><use href="#icon-sun"></use></svg></span>
               <h3 class="card-title-wf fs-6">Días calurosos</h3>
               <p class="card-text-wf small mb-0">Una opción refrescante para momentos de calor.</p>
             </div>
           </div>
           <div class="col reveal">
             <div class="card card-help h-100 p-4 border-0 text-center">
-              <span class="icon-badge icon-badge-naranja mx-auto">🍋</span>
+              <span class="icon-badge icon-badge-naranja mx-auto"><svg class="wf-icon" aria-hidden="true"><use href="#icon-citrus"></use></svg></span>
               <h3 class="card-title-wf fs-6">Variedad</h3>
               <p class="card-text-wf small mb-0">Permite elegir entre diferentes sabores según las preferencias del
                 consumidor.</p>
@@ -422,13 +508,13 @@
         </div>
 
         <ul class="list-unstyled benefit-list mb-4">
-          <li class="reveal"><span aria-hidden="true">💧</span> Contribuye al funcionamiento normal del organismo.</li>
-          <li class="reveal"><span aria-hidden="true">🧠</span> Puede contribuir al mantenimiento de la concentración
+          <li class="reveal"><span class="benefit-icon icon-badge-verde"><svg class="wf-icon" aria-hidden="true"><use href="#icon-drop"></use></svg></span> Contribuye al funcionamiento normal del organismo.</li>
+          <li class="reveal"><span class="benefit-icon icon-badge-celeste"><svg class="wf-icon" aria-hidden="true"><use href="#icon-brain"></use></svg></span> Puede contribuir al mantenimiento de la concentración
             cuando existe una adecuada hidratación.</li>
-          <li class="reveal"><span aria-hidden="true">⚡</span> Acompaña las actividades cotidianas.</li>
-          <li class="reveal"><span aria-hidden="true">🌡️</span> El agua participa en la regulación de la temperatura
+          <li class="reveal"><span class="benefit-icon icon-badge-amarillo"><svg class="wf-icon" aria-hidden="true"><use href="#icon-bolt"></use></svg></span> Acompaña las actividades cotidianas.</li>
+          <li class="reveal"><span class="benefit-icon icon-badge-naranja"><svg class="wf-icon" aria-hidden="true"><use href="#icon-thermometer"></use></svg></span> El agua participa en la regulación de la temperatura
             corporal.</li>
-          <li class="reveal"><span aria-hidden="true">🍋</span> Los sabores frutales pueden hacer más atractiva la
+          <li class="reveal"><span class="benefit-icon icon-badge-rosado"><svg class="wf-icon" aria-hidden="true"><use href="#icon-citrus"></use></svg></span> Los sabores frutales pueden hacer más atractiva la
             experiencia de beber agua.</li>
         </ul>
 
@@ -445,37 +531,37 @@
 
         <ol class="row row-cols-2 row-cols-md-4 row-cols-lg-7 g-3 list-unstyled timeline">
           <li class="col reveal">
-            <div class="timeline-item"><span class="timeline-step">1</span><span class="timeline-icon">🧺</span>
+            <div class="timeline-item"><span class="timeline-step">1</span><svg class="timeline-icon wf-icon" aria-hidden="true"><use href="#icon-basket"></use></svg>
               <h3>Selección de ingredientes</h3>
             </div>
           </li>
           <li class="col reveal">
-            <div class="timeline-item"><span class="timeline-step">2</span><span class="timeline-icon">🚿</span>
+            <div class="timeline-item"><span class="timeline-step">2</span><svg class="timeline-icon wf-icon" aria-hidden="true"><use href="#icon-shower"></use></svg>
               <h3>Lavado y desinfección</h3>
             </div>
           </li>
           <li class="col reveal">
-            <div class="timeline-item"><span class="timeline-step">3</span><span class="timeline-icon">🧪</span>
+            <div class="timeline-item"><span class="timeline-step">3</span><svg class="timeline-icon wf-icon" aria-hidden="true"><use href="#icon-flask"></use></svg>
               <h3>Preparación de los sabores</h3>
             </div>
           </li>
           <li class="col reveal">
-            <div class="timeline-item"><span class="timeline-step">4</span><span class="timeline-icon">🥤</span>
+            <div class="timeline-item"><span class="timeline-step">4</span><svg class="timeline-icon wf-icon" aria-hidden="true"><use href="#icon-drop"></use></svg>
               <h3>Elaboración de la bebida</h3>
             </div>
           </li>
           <li class="col reveal">
-            <div class="timeline-item"><span class="timeline-step">5</span><span class="timeline-icon">🍼</span>
+            <div class="timeline-item"><span class="timeline-step">5</span><svg class="timeline-icon wf-icon" aria-hidden="true"><use href="#icon-bottle"></use></svg>
               <h3>Embotellado</h3>
             </div>
           </li>
           <li class="col reveal">
-            <div class="timeline-item"><span class="timeline-step">6</span><span class="timeline-icon">❄️</span>
+            <div class="timeline-item"><span class="timeline-step">6</span><svg class="timeline-icon wf-icon" aria-hidden="true"><use href="#icon-snowflake"></use></svg>
               <h3>Refrigeración</h3>
             </div>
           </li>
           <li class="col reveal">
-            <div class="timeline-item"><span class="timeline-step">7</span><span class="timeline-icon">✅</span>
+            <div class="timeline-item"><span class="timeline-step">7</span><svg class="timeline-icon wf-icon" aria-hidden="true"><use href="#icon-check-circle"></use></svg>
               <h3>Evaluación del producto</h3>
             </div>
           </li>
@@ -542,19 +628,19 @@
             <p class="flow-label">Inversión</p>
             <p class="flow-value">S/ 75.00</p>
           </div>
-          <span class="flow-arrow" aria-hidden="true">→</span>
+          <svg class="flow-arrow wf-icon" aria-hidden="true"><use href="#icon-arrow-right"></use></svg>
           <div class="flow-step reveal">
             <span class="flow-dot" style="--fill:88%"></span>
             <p class="flow-label">Producción</p>
             <p class="flow-value">S/ 208.50</p>
           </div>
-          <span class="flow-arrow" aria-hidden="true">→</span>
+          <svg class="flow-arrow wf-icon" aria-hidden="true"><use href="#icon-arrow-right"></use></svg>
           <div class="flow-step reveal">
             <span class="flow-dot" style="--fill:100%"></span>
             <p class="flow-label">Ventas</p>
             <p class="flow-value">70 botellas</p>
           </div>
-          <span class="flow-arrow" aria-hidden="true">→</span>
+          <svg class="flow-arrow wf-icon" aria-hidden="true"><use href="#icon-arrow-right"></use></svg>
           <div class="flow-step reveal">
             <span class="flow-dot" style="--fill:34%"></span>
             <p class="flow-label">Ganancia</p>
@@ -578,7 +664,7 @@
     <section class="section-wf" id="encuesta">
       <div class="container">
         <div class="section-head">
-          <h2>⭐ Tu opinión nos ayuda a crecer</h2>
+          <h2>Tu opinión nos ayuda a crecer</h2>
           <p>Estamos construyendo Waterfruit contigo. Ayúdanos a conocer tus preferencias.</p>
         </div>
 
@@ -601,15 +687,15 @@
             <legend>2. ¿Qué tan atractivo te parece Waterfruit?</legend>
             <div class="survey-stars" role="radiogroup" aria-label="Calificación del 1 al 5">
               <input type="radio" id="star5" name="atractivo" value="5"><label for="star5"
-                aria-label="5 estrellas">⭐</label>
+                aria-label="5 estrellas"><svg class="wf-icon" aria-hidden="true"><use href="#icon-star"></use></svg></label>
               <input type="radio" id="star4" name="atractivo" value="4"><label for="star4"
-                aria-label="4 estrellas">⭐</label>
+                aria-label="4 estrellas"><svg class="wf-icon" aria-hidden="true"><use href="#icon-star"></use></svg></label>
               <input type="radio" id="star3" name="atractivo" value="3"><label for="star3"
-                aria-label="3 estrellas">⭐</label>
+                aria-label="3 estrellas"><svg class="wf-icon" aria-hidden="true"><use href="#icon-star"></use></svg></label>
               <input type="radio" id="star2" name="atractivo" value="2"><label for="star2"
-                aria-label="2 estrellas">⭐</label>
+                aria-label="2 estrellas"><svg class="wf-icon" aria-hidden="true"><use href="#icon-star"></use></svg></label>
               <input type="radio" id="star1" name="atractivo" value="1" required><label for="star1"
-                aria-label="1 estrella">⭐</label>
+                aria-label="1 estrella"><svg class="wf-icon" aria-hidden="true"><use href="#icon-star"></use></svg></label>
             </div>
             <p class="survey-error" data-error-for="atractivo" role="alert"></p>
           </fieldset>
@@ -666,11 +752,11 @@
         <div class="d-flex flex-wrap gap-3 justify-content-center mt-4">
           <a href="#" class="redes-link" data-social="instagram" target="_blank" rel="noopener noreferrer"
             aria-label="Instagram de Waterfruit">
-            <span>📸</span> Instagram
+            <svg class="wf-icon" aria-hidden="true"><use href="#icon-instagram"></use></svg> Instagram
           </a>
           <a href="#" class="redes-link" data-social="facebook" target="_blank" rel="noopener noreferrer"
             aria-label="Facebook de Waterfruit">
-            <span>📘</span> Facebook
+            <svg class="wf-icon" aria-hidden="true"><use href="#icon-facebook"></use></svg> Facebook
           </a>
         </div>
       </div>
@@ -683,7 +769,7 @@
     <div class="container">
       <div class="row gy-4 pb-4 footer-top">
         <div class="col-12 col-md-4">
-          <p class="footer-logo">💧 WATERFRUIT</p>
+          <img src="img/logo.png" class="footer-logo" alt="WATERFRUIT" width="160" height="64">
           <p class="footer-slogan">Sabor natural que te hidrata</p>
         </div>
 
@@ -701,9 +787,9 @@
           <p class="footer-handle">@emprendimiento_montessori</p>
           <div class="d-flex gap-2 justify-content-md-end" aria-label="Redes sociales">
             <a href="#" class="footer-social-icon" data-social="instagram" target="_blank" rel="noopener noreferrer"
-              aria-label="Instagram">📸</a>
+              aria-label="Instagram"><svg class="wf-icon" aria-hidden="true"><use href="#icon-instagram"></use></svg></a>
             <a href="#" class="footer-social-icon" data-social="facebook" target="_blank" rel="noopener noreferrer"
-              aria-label="Facebook">📘</a>
+              aria-label="Facebook"><svg class="wf-icon" aria-hidden="true"><use href="#icon-facebook"></use></svg></a>
           </div>
         </div>
       </div>
